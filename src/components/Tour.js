@@ -13,7 +13,7 @@ export default function Tour ({tour, handleDelete}){
                 <h3 className="tour-price">{tour.price}</h3>
             </div>
 
-            <div className={`para-id${tour.id}`}>
+            <div id={`tour-item-para-${tour.id}`}>
                 <p>{readMore? tour.info : shortInfo} </p>
                 <button className={`tour-para-${tour.id}`} onClick={()=>{setReadMore(!readMore)}}>{readMore?"See Less":"See More"}</button>
             </div>
