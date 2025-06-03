@@ -15,7 +15,7 @@ export default function Tour ({tour, handleDelete}){
 
             <div id={`tour-item-para-${tour.id}`}>
                 <p>{readMore? tour.info : shortInfo} </p>
-                <button id={`see-more-${tour.id}`} onClick={()=>{setReadMore(!readMore)}}>{readMore?"See less":"See more"}</button>
+                <button id={`see-more-${tour.id}`} onClick={()=>{setReadMore(!readMore)}}>{readMore?"Show less":"See more"}</button>
             </div>
             <br></br>
             <button id={`delete-btn-${tour.id}`} className="delete-btn" onClick={()=>{handleDelete(tour.id)}}>Remove</button>
