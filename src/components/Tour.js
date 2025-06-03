@@ -3,7 +3,7 @@ import React, { useState } from "react"
 export default function Tour ({tour, handleDelete}){
     const [readMore, setReadMore] = useState(false);
 
-    const shortInfo = tour.info.slice(0,201)+ "...";
+    const shortInfo = tour.info.slice(0,200);
     return(
         <div className="single-tour" style={{marginTop:15}}>
             <img src={tour.image}/>
